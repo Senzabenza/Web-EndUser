@@ -1,58 +1,39 @@
-# Angular 2 QuickStart Source
+# node-js-getting-started
 
-This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
-the foundation for most of the documentation samples and potentially a good starting point for your application.
+A barebones Node.js app using [Express 4](http://expressjs.com/).
 
-## Create a new project based on the QuickStart
+This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
 
-Clone this repo into new project folder (e.g., `my-proj`).
-```bash
-git clone  https://github.com/angular/quickstart  my-proj
-cd my-proj
+## Running Locally
+
+Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
+
+```sh
+$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
+$ cd node-js-getting-started
+$ npm install
+$ npm start
 ```
 
-We have no intention of updating the source on `angular/quickstart`.
-Discard everything "git-like" by deleting the `.git` folder.
-```bash
-rm -rf .git
+Your app should now be running on [localhost:5000](http://localhost:5000/).
+
+## Deploying to Heroku
+
 ```
-
-### Create a new git repo
-You could [start writing code](#start-development) now and throw it all away when you're done.
-If you'd rather preserve your work under source control, consider taking the following steps.
-
-Initialize this project as a *local git repo* and make the first commit:
-```bash
-git init
-git add .
-git commit -m "Initial commit"
+$ heroku create
+$ git push heroku master
+$ heroku open
 ```
+or
 
-Create a *remote repository* for this project on the service of your choice.
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-Grab its address (e.g. *`https://github.com/<my-org>/my-proj.git`*) and push the *local repo* to the *remote*.
-```bash
-git remote add origin <repo-address>
-git push -u origin master
-```
-### Start development
+## Documentation
 
-Install the npm packages described in the `package.json` and verify that it works:
+For more information about using Node.js on Heroku, see these Dev Center articles:
 
-```bash
-npm install
-npm start
-```
-You're ready to write your application.
-
-Remember the npm scripts in `package.json`:
-
-* `npm start` - runs the compiler and a server at the same time, both in "watch mode".
-* `npm run tsc` - runs the TypeScript compiler once.
-* `npm run tsc:w` - runs the TypeScript compiler in watch mode; the process keeps running, awaiting changes to TypeScript files and re-compiling when it sees them.
-* `npm run lite` - runs the [lite-server](https://www.npmjs.com/package/lite-server), a light-weight, static file server, written and maintained by
-[John Papa](https://github.com/johnpapa) and
-[Christopher Martin](https://github.com/cgmartin)
-with excellent support for Angular apps that use routing.
-* `npm run typings` - runs the typings tool.
-* `npm run postinstall` - called by *npm* automatically *after* it successfully completes package installation. This script installs the TypeScript definition files this app requires.
+- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
+- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
+- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
+- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
+- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)

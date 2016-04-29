@@ -1,0 +1,8 @@
+{
+  "name": "Senzabenza EndUser Webapp",
+  "description": "Senzabenza EndUser Webapp",
+  "repository": "https://github.com/Senzabenza/Web-EndUser.git",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["senzabenza", "fantacalcio", "mantra"],
+  "image": "heroku/nodejs"
+}

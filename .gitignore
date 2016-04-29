@@ -1,2 +1,5 @@
-Web-EndUser.iml
 node_modules
+.env
+Dockerfile
+docker-compose.yml
+Web-EndUser.iml
